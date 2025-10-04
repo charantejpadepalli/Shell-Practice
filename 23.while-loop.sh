@@ -7,7 +7,7 @@ echo "starting countdown..."
 while [ $count -gt 0 ]
 do  
     echo "Time left: $count"
-    sleap 1
+    sleep 1
     count=$((count - 1))
 done
 
