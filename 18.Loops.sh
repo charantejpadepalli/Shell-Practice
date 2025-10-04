@@ -32,7 +32,7 @@ do
     #check package is installed or not
     dnf list installed $package &>>$LOG_FILE
     #if exit code is 0, already installed else not installed
-    if [ $? -ne 0]; then
+    if [ $? -ne 0 ]; then
         dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "$package"
     else
